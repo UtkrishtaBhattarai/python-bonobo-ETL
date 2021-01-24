@@ -65,7 +65,6 @@ def getdatafromcsv():
             dictionary["company"].append(data[1])
             dictionary["location"].append(data[2])
     return dictionary
-
 def getdatafromdatabase():
     try:
         connection = mysql.connector.connect(host='localhost',database='assignment',user='root',password='')
